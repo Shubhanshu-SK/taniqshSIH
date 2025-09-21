@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sikkim Monasteries | Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #0077b6;
+      padding: 15px 30px;
+    }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      padding: 100px 20px;
+      background-image: url("https://holidays.tripfactory.com/sikkim/wp-content/uploads/sites/18/2024/05/Red-Panda-Winter-Carnival.webp");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: #fff; 
+      text-align: center;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0; 
+      background: rgba(0, 0, 0, 0.35); 
+      z-index: 0;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .about-sikkim {
+  background: #f0f4f8;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-sikkim h3 {
+  font-size: 28px;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.about-sikkim p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 10px auto;
+  color: #333;
+}
+
+
+    .explore {
+      padding: 40px 20px;
+      background: #fff;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .explore-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .explore-image {
+      width: 400px;
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .explore img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #ddd;
+    }
+    #monastery-caption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+    }
+    .explore-text {
+      flex: 1;
+      text-align: left;
+    }
+    .explore-text h4 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+    .explore-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .explore button {
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Sikkim Monasteries</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h2>Welcome to Sikkim Monasteries Digital Portal</h2>
+      <p>
+        Explore the hidden monasteries, rich culture, authentic food, and unique traditions of Sikkim.
+        This platform is your all-in-one guide to tourism, cultural preservation, and authentic travel experiences.
+      </p>
+    </div>
+  </section>
+  <section class="about-sikkim">
+    <div class="section-inner">
+      <h3>About Sikkim</h3>
+      <p>
+        Sikkim is a beautiful state in northeastern India, known for its stunning landscapes, snow-capped mountains, lush green valleys, and rich Buddhist culture. 
+        It is home to numerous ancient monasteries, unique traditions, and vibrant festivals that attract travelers from around the world.
+      </p>
+      <p>
+        The serene environment, diverse flora and fauna, and warm hospitality make Sikkim a perfect destination for nature lovers, adventure enthusiasts, and spiritual seekers alike.
+      </p>
+    </div>
+  </section>
+  
+  
+
+  <section class="explore">
+    <h3>Explore Monasteries</h3>
+    <div class="explore-content">
+      <div class="explore-image">
+        <img id="monastery-img" src="https://holidays.tripfactory.com/sikkim/wp-content/uploads/sites/18/2024/05/Rongli.webp" alt="Monastery Image">
+        <p id="monastery-caption">Rongli Monastery – A peaceful place surrounded by nature.</p>
+      </div>
+      <div class="explore-text">
+        <h4 id="monastery-title">Rongli Monastery</h4>
+        <p id="monastery-text">
+          A serene monastery surrounded by green valleys, Rongli is known for its peaceful environment and traditional Buddhist rituals.
+        </p>
+        <button onclick="nextMonastery()">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sikkim Monasteries Project. All Rights Reserved.</p>
+    <p>Contact us: <a href="mailto:info@sikkimmonasteries.com">info@sikkimmonasteries.com</a></p>
+  </footer>
+
+  <script>
+    const monasteries = [
+      {
+        img:"https://holidays.tripfactory.com/sikkim/wp-content/uploads/sites/18/2024/05/Rongli.webp",
+        title:"Rongli Monastery",
+        text:"A serene monastery surrounded by green valleys, Rongli is known for its peaceful environment and traditional Buddhist rituals.",
+        caption:"Rongli Monastery – A peaceful place surrounded by nature."
+      },
+      {
+        img:"https://holidays.tripfactory.com/sikkim/wp-content/uploads/sites/18/2024/08/Bokar-Monastery.webp",
+        title:"Bokar Monastery",
+        text:"One of the most famous monasteries in Sikkim, Bokar Monastery reflects rich Tibetan architecture and teachings of Buddhism.",
+        caption:"Bokar Monastery – Known for its Tibetan architecture."
+      },
+      {
+        img:"https://holidays.tripfactory.com/sikkim/wp-content/uploads/sites/18/2024/05/Festivals-in-Sikkim-in-winter.webp",
+        title:"Sikkim Festivals",
+        text:"Colorful festivals like Losar and Pang Lhabsol showcase the spiritual and cultural vibrancy of Sikkim monasteries.",
+        caption:"Sikkim Festivals – A blend of tradition and spirituality."
+      }
+    ];
+
+    let index = 0;
+    function nextMonastery() {
+      index = (index + 1) % monasteries.length;
+      document.getElementById("monastery-img").src = monasteries[index].img;
+      document.getElementById("monastery-title").textContent = monasteries[index].title;
+      document.getElementById("monastery-text").textContent = monasteries[index].text;
+      document.getElementById("monastery-caption").textContent = monasteries[index].caption;
+    }
+
+    setInterval(nextMonastery, 3000);
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monastery360 Registration</title>
+    <link rel="stylesheet" href="./registration1.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+        }
+
+        .form-container h1 {
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+
+        input,
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .gender {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #00796b;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        .login-text {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-text a {
+            color: #00796b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Monastery360</h1>
+        <p class="subtitle">Your gateway to peace, culture, and adventure begins here</p>
+        <form method="post" action="/registerUser">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" name="name" required>
+
+            <label>Gmail</label>
+            <input type="email" placeholder="abcd@gmail.com" name="email" required>
+
+            <label>Gender</label>
+            <div class="gender">
+                <input class="w-0" type="radio" name="genderMale" id="genderMale">
+                <label for="genderMale"> Male</label>
+                <input type="radio" name="genderFemale" id="genderFemale">
+                <label for="genderFemale"> Female</label>
+            </div>
+
+            <label for="country">Select your country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>-- Choose a country --</option>
+                <option value="in">India</option>
+                <option value="cn">China</option>
+                <option value="jp">Japan</option>
+                <option value="bd">Bangladesh</option>
+                <option value="pk">Pakistan</option>
+                <option value="lk">Sri Lanka</option>
+                <option value="np">Nepal</option>
+                <option value="bt">Bhutan</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="gb">United Kingdom</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="au">Australia</option>
+                <option value="nz">New Zealand</option>
+                <option value="sg">Singapore</option>
+                <option value="my">Malaysia</option>
+                <option value="id">Indonesia</option>
+                <option value="th">Thailand</option>
+                <option value="vn">Vietnam</option>
+                <option value="ru">Russia</option>
+                <option value="za">South Africa</option>
+                <option value="br">Brazil</option>
+                <option value="mx">Mexico</option>
+                <option value="eg">Egypt</option>
+            </select>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" name="password" required>
+            
+            <button type="submit">Sign up</button>
+        </form>
+        <p class="login-text">Already have an account? <a href="login">Login</a></p>
+    </div>
+</body>
+
+</html>

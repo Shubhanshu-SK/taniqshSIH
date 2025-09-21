@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Syntax Sena</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #0077b6;
+      padding: 15px 30px;
+    }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 22px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #ffd60a;
+    }
+
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    .page-title h2 {
+      font-size: 28px;
+      color: #0077b6;
+    }
+    .page-title p {
+      font-size: 16px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    /* Team Section */
+    .team-section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .team-section h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #0077b6;
+      text-align: center;
+    }
+    .team-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      text-align: center;
+    }
+    .team-member {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+    .team-member h4 {
+      font-size: 18px;
+      color: #0077b6;
+      margin-bottom: 8px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 40px 20px;
+      background: #e9f5ff;
+      text-align: center;
+    }
+    .contact-section h3 {
+      font-size: 22px;
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+    .contact-section p {
+      font-size: 15px;
+      margin: 5px 0;
+    }
+    .contact-section a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: #ffd60a;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Sikkim Monasteries</h1>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="page-title">
+    <h2>About Us</h2>
+    <p>We are Team <b>Syntax Sena</b>, passionate about preserving culture and promoting tourism.</p>
+  </section>
+  <section class="team-section">
+    <h3>Our Mission</h3>
+    <p style="text-align: center; margin-bottom: 30px;">
+      Our goal is to digitize and showcase the monasteries of Sikkim, 
+      promoting tourism while preserving the rich cultural heritage. 
+      We believe in combining technology with tradition to give travelers 
+      an authentic and seamless experience.
+    </p>
+  </section>
+  <section class="team-section">
+    <h3>Meet Our Team</h3>
+    <div class="team-list">
+      <div class="team-member"><h4>Tanishqdeep Singh</h4><p>Developer</p></div>
+      <div class="team-member"><h4>Utsav Tiwari</h4><p>Research & Content</p></div>
+      <div class="team-member"><h4>Palak Yadav</h4><p>Designer</p></div>
+      <div class="team-member"><h4>Vishal Gupta</h4><p>Backend & Database</p></div>
+      <div class="team-member"><h4>Shivanshu Patel</h4><p>Frontend Developer</p></div>
+      <div class="team-member"><h4>Rohini</h4><p>Presentation & Coordination</p></div>
+    </div>
+  </section>
+  <section class="contact-section">
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:syntaxsena@gmail.com">syntaxsena@gmail.com</a></p>
+    <p>Location: Gwalior, Madhya Pradesh, India</p>
+    <p>Follow us on <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Syntax Sena | Sikkim Monasteries Project. All Rights Reserved.</p>
+    <p>Built with ❤️ by Team Syntax Sena</p>
+  </footer>
+
+</body>
+</html>
